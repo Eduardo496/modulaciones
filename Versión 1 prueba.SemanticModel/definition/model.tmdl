@@ -1,0 +1,18 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-MX
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["RECHAZO_CIERRE"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table RECHAZO_CIERRE
+
+ref cultureInfo es-ES
+

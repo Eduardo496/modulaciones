@@ -1,0 +1,247 @@
+table RECHAZO_CIERRE
+	lineageTag: ac9b7855-fffd-4e44-9931-5e6acb532531
+
+	column DEPOSITO_DSC
+		dataType: string
+		lineageTag: cc74058c-fc7d-484a-98fc-bcff4b333691
+		summarizeBy: none
+		sourceColumn: DEPOSITO_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column MARCA_DSC
+		dataType: string
+		lineageTag: e7477f57-f24d-4832-9c47-9aff34837197
+		summarizeBy: none
+		sourceColumn: MARCA_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLIENTE_ID
+		dataType: double
+		lineageTag: f6787559-a6be-4961-8b03-9dca487a6c91
+		summarizeBy: count
+		sourceColumn: CLIENTE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PRODUCTO_ID
+		dataType: double
+		lineageTag: 33f89ab4-5ff8-4385-b4cf-44a98dd5e14c
+		summarizeBy: count
+		sourceColumn: PRODUCTO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PRODUCTO_DSC
+		dataType: string
+		lineageTag: dc7619ac-a09c-4b21-967a-c3d5aa7af19d
+		summarizeBy: none
+		sourceColumn: PRODUCTO_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEGMENTO_MKT_DSC
+		dataType: string
+		lineageTag: 1892b1fa-48bd-4976-a933-f1cef241e8da
+		summarizeBy: none
+		sourceColumn: SEGMENTO_MKT_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPOSITO_ID
+		dataType: double
+		lineageTag: 72296496-5ccb-4812-af28-28403d658ea3
+		summarizeBy: count
+		sourceColumn: DEPOSITO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DIVISION_DSC
+		dataType: string
+		lineageTag: 44b61f12-a2f6-41d2-b33d-30ea353ebcf7
+		summarizeBy: none
+		sourceColumn: DIVISION_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column FLAG_ESTADISTICO_DSC
+		dataType: string
+		lineageTag: 092398a2-fce6-4258-b260-69271b533d28
+		summarizeBy: none
+		sourceColumn: FLAG_ESTADISTICO_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column PLANILLA_ID
+		dataType: double
+		lineageTag: 6163ceea-615d-4c2a-a6c7-f48d053a6843
+		summarizeBy: count
+		sourceColumn: PLANILLA_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SOCIEDAD_FLETE_DSC
+		dataType: string
+		lineageTag: 535c1938-3e35-45ff-ba20-5455e2d8a3d0
+		summarizeBy: none
+		sourceColumn: SOCIEDAD_FLETE_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column JEFE_ZONA_DSC
+		dataType: string
+		lineageTag: c82fa2df-e47f-47dc-a46d-1c48ea33ff45
+		summarizeBy: none
+		sourceColumn: JEFE_ZONA_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column JEFE_TERRITORIO_DSC
+		dataType: string
+		lineageTag: 8a4754f6-6773-4855-aaae-b8a2551a4347
+		summarizeBy: none
+		sourceColumn: JEFE_TERRITORIO_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOCIEDAD_ID
+		dataType: string
+		lineageTag: 3ca2404a-8f35-4b15-b73e-d3913facce56
+		summarizeBy: none
+		sourceColumn: SOCIEDAD_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOCIEDAD_DSC
+		dataType: string
+		lineageTag: ef67d4ed-c805-49d2-bc23-26ab8896f3b0
+		summarizeBy: none
+		sourceColumn: SOCIEDAD_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_ID
+		dataType: double
+		lineageTag: 53a9a91b-97e3-48fa-bfc3-c388e55139c3
+		summarizeBy: count
+		sourceColumn: FECHA_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FECHA_ID2
+		dataType: double
+		lineageTag: 12198aff-1b25-4d71-9686-9c3a2023cc2b
+		summarizeBy: sum
+		sourceColumn: FECHA_ID2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PAIS_DSC
+		dataType: string
+		lineageTag: b7aecc61-9ec7-42af-af2f-f4a76d2df9e7
+		summarizeBy: none
+		sourceColumn: PAIS_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column MOTIVO_DSC
+		dataType: string
+		lineageTag: 80382070-9fcd-47e5-8013-1ae81fc32b88
+		summarizeBy: none
+		sourceColumn: MOTIVO_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_ID3
+		dataType: double
+		lineageTag: 00b7c7e0-c708-49b1-9e9f-3688ae815db6
+		summarizeBy: sum
+		sourceColumn: FECHA_ID3
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TIPO_MOVIMIENTO_DESC
+		dataType: string
+		lineageTag: 0a8b2815-1f16-4a03-8a3c-9d3e1686c303
+		summarizeBy: none
+		sourceColumn: TIPO_MOVIMIENTO_DESC
+
+		annotation SummarizationSetBy = Automatic
+
+	column COORDINADOR_DSC
+		dataType: string
+		lineageTag: 109db5cc-a5ad-444d-a7e9-6c276d88f219
+		summarizeBy: none
+		sourceColumn: COORDINADOR_DSC
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_ID4
+		dataType: double
+		lineageTag: 0878f304-e4f8-4632-88b6-9f1250cbb971
+		summarizeBy: sum
+		sourceColumn: FECHA_ID4
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SUM(((O106311.Q_UND_VENTA+(O106311.Q_UND_SCARGO_AUT+O106311.Q_UND_SCARGO_MAN+O106311.Q_UND_SCARGO_NEG))*O106311.N_CAPACIDAD_UNID'
+		dataType: double
+		lineageTag: 4fc98038-dcc8-4a5a-a1b2-07fdbc3ac993
+		summarizeBy: count
+		sourceColumn: SUM(((O106311.Q_UND_VENTA+(O106311.Q_UND_SCARGO_AUT+O106311.Q_UND_SCARGO_MAN+O106311.Q_UND_SCARGO_NEG))*O106311.N_CAPACIDAD_UNID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SUM(O106311.Q_UND_RECHAZADAS*O106311.N_CAPACIDAD_UNIDAD_LT/100)'
+		dataType: double
+		lineageTag: 7fed7329-f087-424e-bac5-3119c065aebb
+		summarizeBy: sum
+		sourceColumn: SUM(O106311.Q_UND_RECHAZADAS*O106311.N_CAPACIDAD_UNIDAD_LT/100)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAMION_ID
+		dataType: string
+		lineageTag: 572fe753-b5c3-4a5b-8841-065dac9d0890
+		summarizeBy: none
+		sourceColumn: CAMION_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RECHAZO_CIERRE = m
+		mode: import
+		source =
+				let
+				    Origen = PowerPlatform.Dataflows(null),
+				    Workspaces = Origen{[Id="Workspaces"]}[Data],
+				    #"75c4dbd4-6249-460d-b007-180217aa3b8a" = Workspaces{[workspaceId="75c4dbd4-6249-460d-b007-180217aa3b8a"]}[Data],
+				    #"f3eac89a-f446-429d-8f0c-e4ec6f5567ba" = #"75c4dbd4-6249-460d-b007-180217aa3b8a"{[dataflowId="f3eac89a-f446-429d-8f0c-e4ec6f5567ba"]}[Data],
+				    RECHAZO_CIERRE_ = #"f3eac89a-f446-429d-8f0c-e4ec6f5567ba"{[entity="RECHAZO_CIERRE",version=""]}[Data]
+				in
+				    RECHAZO_CIERRE_
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
