@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "24460ddfbb940aed1be2",
+  "position": {
+    "x": 128.98842526675489,
+    "y": 79.5886028241679,
+    "z": 0,
+    "height": 279.93232717465958,
+    "width": 279.93232717465958,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RECHAZO_CIERRE"
+                        }
+                      },
+                      "Property": "HL_RECHAZOS"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(RECHAZO_CIERRE.SUM(O106311.Q_UND_RECHAZADAS*O106311.N_CAPACIDAD_UNIDAD_LT/100))",
+              "nativeQueryRef": "Suma de SUM(O106311.Q_UND_RECHAZADAS*O106311.N_CAPACIDAD_UNIDAD_LT/100)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "RECHAZO_CIERRE"
+                      }
+                    },
+                    "Property": "HL_RECHAZOS"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
