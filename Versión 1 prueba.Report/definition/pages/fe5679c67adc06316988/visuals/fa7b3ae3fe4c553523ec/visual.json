@@ -1,0 +1,90 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "fa7b3ae3fe4c553523ec",
+  "position": {
+    "x": 518.71436331186464,
+    "y": 181.80429890587413,
+    "z": 1,
+    "height": 355.98044541010319,
+    "width": 494.55854737332197,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RECHAZO_CIERRE"
+                    }
+                  },
+                  "Property": "CLIENTE_ID"
+                }
+              },
+              "queryRef": "CountNonNull(RECHAZO_CIERRE.CLIENTE_ID)",
+              "nativeQueryRef": "CLIENTE_ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RECHAZO_CIERRE"
+                    }
+                  },
+                  "Property": "CAMION_ID"
+                }
+              },
+              "queryRef": "RECHAZO_CIERRE.CAMION_ID",
+              "nativeQueryRef": "CAMION_ID"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RECHAZO_CIERRE"
+                        }
+                      },
+                      "Property": "HL_RECHAZOS"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(RECHAZO_CIERRE.HL_RECHAZOS)",
+              "nativeQueryRef": "Suma de HL_RECHAZOS"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RECHAZO_CIERRE"
+                        }
+                      },
+                      "Property": "HL_VENTAS"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonNull(RECHAZO_CIERRE.HL_VENTAS)",
+              "nativeQueryRef": "Recuento de HL_VENTAS"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
