@@ -201,21 +201,21 @@ table RECHAZO_CIERRE
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column 'SUM(((O106311.Q_UND_VENTA+(O106311.Q_UND_SCARGO_AUT+O106311.Q_UND_SCARGO_MAN+O106311.Q_UND_SCARGO_NEG))*O106311.N_CAPACIDAD_UNID'
+	column HL_VENTAS
 		dataType: double
 		lineageTag: 4fc98038-dcc8-4a5a-a1b2-07fdbc3ac993
 		summarizeBy: count
-		sourceColumn: SUM(((O106311.Q_UND_VENTA+(O106311.Q_UND_SCARGO_AUT+O106311.Q_UND_SCARGO_MAN+O106311.Q_UND_SCARGO_NEG))*O106311.N_CAPACIDAD_UNID
+		sourceColumn: HL_VENTAS
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column 'SUM(O106311.Q_UND_RECHAZADAS*O106311.N_CAPACIDAD_UNIDAD_LT/100)'
+	column HL_RECHAZOS
 		dataType: double
 		lineageTag: 7fed7329-f087-424e-bac5-3119c065aebb
 		summarizeBy: sum
-		sourceColumn: SUM(O106311.Q_UND_RECHAZADAS*O106311.N_CAPACIDAD_UNIDAD_LT/100)
+		sourceColumn: HL_RECHAZOS
 
 		annotation SummarizationSetBy = Automatic
 
@@ -237,9 +237,10 @@ table RECHAZO_CIERRE
 				    Workspaces = Origen{[Id="Workspaces"]}[Data],
 				    #"75c4dbd4-6249-460d-b007-180217aa3b8a" = Workspaces{[workspaceId="75c4dbd4-6249-460d-b007-180217aa3b8a"]}[Data],
 				    #"f3eac89a-f446-429d-8f0c-e4ec6f5567ba" = #"75c4dbd4-6249-460d-b007-180217aa3b8a"{[dataflowId="f3eac89a-f446-429d-8f0c-e4ec6f5567ba"]}[Data],
-				    RECHAZO_CIERRE_ = #"f3eac89a-f446-429d-8f0c-e4ec6f5567ba"{[entity="RECHAZO_CIERRE",version=""]}[Data]
+				    RECHAZO_CIERRE_ = #"f3eac89a-f446-429d-8f0c-e4ec6f5567ba"{[entity="RECHAZO_CIERRE",version=""]}[Data],
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(RECHAZO_CIERRE_,{{"SUM(O106311.Q_UND_RECHAZADAS*O106311.N_CAPACIDAD_UNIDAD_LT/100)", "HL_RECHAZOS"}, {"SUM(((O106311.Q_UND_VENTA+(O106311.Q_UND_SCARGO_AUT+O106311.Q_UND_SCARGO_MAN+O106311.Q_UND_SCARGO_NEG))*O106311.N_CAPACIDAD_UNID", "HL_VENTAS"}})
 				in
-				    RECHAZO_CIERRE_
+				    #"Columnas con nombre cambiado"
 
 	annotation PBI_NavigationStepName = Navegación
 
